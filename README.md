@@ -18,7 +18,7 @@ npm start
 - navigate to localhost:[PORT] to view application
 
 ### To access deployed app on Heroku
-- go to https://cryptic-mesa-08509.herokuapp.com/
+- go to https://guarded-falls-37181.herokuapp.com/
 
 ## Usage
 
