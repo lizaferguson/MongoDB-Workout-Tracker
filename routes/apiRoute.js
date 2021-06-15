@@ -22,6 +22,16 @@ router.get('/api/workouts', (req, res) => {
         });
 });
 
+router.get("/api/workouts/range", (req, res) => {
+    Workout.find({})
+      .limit(7)
+      .then((dbWorkout) => {
+        res.json(dbWorkout);
+      })
+      .catch((err) => {
+        res.json(err);
+      });
+  });
 
 router.put('/api/workouts/:id', ({ params, body }, res) => {
     Workout.findOneAndUpdate({ _id: params.id }, { exercise: body })
